@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=4, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <main>
+      <!-- <header>
+       
+        <nav>
+          <a href="#">Home</a>
+          <a href="">About</a>
+          <a href="#">Experience</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Certifications</a>
+        </nav>
+        <div class="Resume">Check Resume</div> -->
+      <!-- </header> -->
+
+      <!-- <header> -->
+      <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"> <h2>AH.</h2></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse naiv justify-content-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./experience.html">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./portfollio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./certifications.html"
+                  >Certifications</a
+                >
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+
+          <div class="Resume d-lg-flex d-none">Check Resume</div>
+        </div>
+      </nav>
+      <!-- </header> -->
+
+      <section>
+        <div class="container">
+          <h2>Portfollio</h2>
+
+          <div class="navs-tabs pt-5 mt-5">
+            <div class="filter-tabs-container">
+              <ul class="nav nav-pills mb-3" id="filterTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="all-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#all"
+                    type="button"
+                    role="tab"
+                    aria-controls="all"
+                    aria-selected="true"
+                  >
+                    All
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="DataScience-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#DataScience"
+                    type="button"
+                    role="tab"
+                    aria-controls="DataScience"
+                    aria-selected="false"
+                  >
+                    Data Science
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="DataAnalysis-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#DataAnalysis"
+                    type="button"
+                    role="tab"
+                    aria-controls="DataAnalysis"
+                    aria-selected="false"
+                  >
+                    Data Analysis
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="MachineLearning-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#MachineLearning"
+                    type="button"
+                    role="tab"
+                    aria-controls="MachineLearning"
+                    aria-selected="false"
+                  >
+                    Machine Learning
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="ComputerVision-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#ComputerVision"
+                    type="button"
+                    role="tab"
+                    aria-controls="ComputerVision"
+                    aria-selected="false"
+                  >
+                    Computer Vision
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="WebScraping-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#WebScraping"
+                    type="button"
+                    role="tab"
+                    aria-controls="WebScraping"
+                    aria-selected="false"
+                  >
+                    Web Scraping
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="filterTabsContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="all"
+                  role="tabpanel"
+                  aria-labelledby="all-tab"
+                >
+                  <!-- محتوى قسم الكل -->
+                  <div class="filtered-items">
+                    <div class="row g-3 g-lg-4">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs">
+                            <h5>House Prices Prediction</h5>
+                            <p>
+                              Predicting house prices using advanced regression
+                              models.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/messi.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>CR7 Vs Messi Who is the Real Goat 🐐</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port3.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Sign Language Recognition</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port4.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Loan Status Prediction</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port5.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Customer Churn Prediction</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port6.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Gold Price Prediction</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port7.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Autism Prediction</h5>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port8.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Simple Automated Job Scraper</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="DataScience"
+                  role="tabpanel"
+                  aria-labelledby="DataScience-tab"
+                >
+                  <!-- محتوى قسم المميز -->
+                  <div class="filtered-items">
+                    <div class="row g-3 g-lg-4">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs"></div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs"></div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs"></div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs"></div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="DataAnalysis"
+                  role="tabpanel"
+                  aria-labelledby="DataAnalysis-tab"
+                >
+                  <!-- محتوى قسم الجديد -->
+                  <div class="filtered-items">
+                    <div class="row g-3 g-lg-4">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/messi.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>CR7 Vs Messi Who is the Real Goat 🐐</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="MachineLearning"
+                  role="tabpanel"
+                  aria-labelledby="MachineLearning-tab"
+                >
+                  <!-- محتوى قسم الأكثر مشاهدة -->
+                  <div class="filtered-items">
+                    <div class="row g-3 g-lg-4">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs">
+                            <h5>House Prices Prediction</h5>
+                            <p>
+                              Predicting house prices using advanced regression
+                              models.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port4.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Loan Status Prediction</h5>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port7.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Autism Prediction</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="ComputerVision"
+                  role="tabpanel"
+                  aria-labelledby="ComputerVision-tab"
+                >
+                  <!-- محتوى قسم الأكثر مشاهدة -->
+                  <div class="filtered-items">
+                    <div class="row g-3 g-lg-4">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port3.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                            <h5>Sign Language Recognition</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="WebScraping"
+                  role="tabpanel"
+                  aria-labelledby="WebScraping-tab"
+                >
+                  <!-- محتوى قسم الأكثر مشاهدة -->
+                  <div class="filtered-items">
+                    <div class="row g-3 g-lg-4">
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img src="./imgs/port8.png" class="w-100" alt="" />
+                          <div class="content-card-navs">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6 col-lg-4">
+                        <div class="item">
+                          <img
+                            src="./imgs/realstate.png"
+                            class="w-100"
+                            alt=""
+                          />
+                          <div class="content-card-navs">
+                          </div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="popular"
+                  role="tabpanel"
+                  aria-labelledby="popular-tab"
+                >
+                  <!-- محتوى قسم الأكثر مشاهدة -->
+                  <div class="filtered-items">
+                    <div class="item">عنصر مشهور 1</div>
+                    <div class="item">عنصر مشهور 2</div>
+                    <div class="item">عنصر مشهور 3</div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="popular"
+                  role="tabpanel"
+                  aria-labelledby="popular-tab"
+                >
+                  <!-- محتوى قسم الأكثر مشاهدة -->
+                  <div class="filtered-items">
+                    <div class="item">عنصر مشهور 1</div>
+                    <div class="item">عنصر مشهور 2</div>
+                    <div class="item">عنصر مشهور 3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
